@@ -1,0 +1,107 @@
+[gd_scene format=3 uid="uid://2ci3o8fbgrv7"]
+
+[ext_resource type="Texture2D" uid="uid://cc0e4sg6con83" path="res://assets/bg/3.png" id="1_wdeb7"]
+[ext_resource type="Texture2D" uid="uid://b80lp43hv8aac" path="res://assets/sprite_mq/characters/10-removebg-preview.png" id="2_adcn7"]
+[ext_resource type="Texture2D" uid="uid://dkrijc68lqqh8" path="res://assets/sprite_mq/characters/13-removebg-preview.png" id="3_t17xi"]
+[ext_resource type="Texture2D" uid="uid://ibge8f01t7l2" path="res://assets/sprite_mq/characters/14-removebg-preview.png" id="4_beyxi"]
+[ext_resource type="Texture2D" uid="uid://1y8oxeuavw6u" path="res://assets/sprite_mq/characters/15-removebg-preview.png" id="5_x6pvx"]
+[ext_resource type="Texture2D" uid="uid://bcdlldky5udl" path="res://assets/sprite_mq/characters/16-removebg-preview.png" id="6_j2y7t"]
+[ext_resource type="Texture2D" uid="uid://cqnhjh0ah6xqf" path="res://assets/sprite_mq/characters/17-removebg-preview.png" id="7_jy7ch"]
+[ext_resource type="Texture2D" uid="uid://cfmu3m5oqphi2" path="res://assets/sprite_mq/characters/Copy_of_Copy_of_Math_quest__4_-removebg-preview.png" id="8_j6hc6"]
+
+[sub_resource type="Theme" id="Theme_pn6sb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4ob2m"]
+bg_color = Color(1, 0.08235294, 0.28627452, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.0076186024, 0.0076186024, 0.0076186024, 1)
+border_blend = true
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nqcnj"]
+bg_color = Color(1, 0.26666668, 0.39607844, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.0076186024, 0.0076186024, 0.0076186024, 1)
+border_blend = true
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[node name="Character" type="Control" unique_id=1582599456]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="char_bg" type="TextureRect" parent="." unique_id=610453353]
+layout_mode = 0
+offset_left = 1.0
+offset_top = -1.0
+offset_right = 607.0
+offset_bottom = 1054.0
+texture = ExtResource("1_wdeb7")
+expand_mode = 1
+
+[node name="wizard_boy" type="Sprite2D" parent="." unique_id=1323117897]
+position = Vector2(122, 438.00003)
+scale = Vector2(0.70149994, 0.6056681)
+texture = ExtResource("2_adcn7")
+
+[node name="princess" type="Sprite2D" parent="." unique_id=1372495716]
+position = Vector2(304, 534)
+scale = Vector2(0.77099997, 0.6685435)
+texture = ExtResource("3_t17xi")
+
+[node name="robin" type="Sprite2D" parent="." unique_id=1913946421]
+position = Vector2(99.00001, 703)
+scale = Vector2(0.61433345, 0.56681675)
+texture = ExtResource("4_beyxi")
+
+[node name="wizard_girl" type="Sprite2D" parent="." unique_id=552830970]
+position = Vector2(518, 704)
+scale = Vector2(0.64599985, 0.54729736)
+texture = ExtResource("5_x6pvx")
+
+[node name="warrior" type="Sprite2D" parent="." unique_id=138973580]
+position = Vector2(305, 846)
+scale = Vector2(0.70533335, 0.6906907)
+texture = ExtResource("6_j2y7t")
+
+[node name="redridinghood" type="Sprite2D" parent="." unique_id=597972600]
+position = Vector2(488.00003, 438)
+scale = Vector2(0.64066654, 0.6171171)
+texture = ExtResource("7_jy7ch")
+
+[node name="back" type="TextureButton" parent="." unique_id=55843746]
+layout_mode = 0
+offset_left = -73.0
+offset_top = -2.0
+offset_right = 211.0
+offset_bottom = 194.0
+texture_normal = ExtResource("8_j6hc6")
+texture_pressed = ExtResource("8_j6hc6")
+texture_hover = ExtResource("8_j6hc6")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Button" type="Button" parent="." unique_id=377607940]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 437.0
+offset_top = 936.0
+offset_right = 595.0
+offset_bottom = 1002.0
+theme = SubResource("Theme_pn6sb")
+theme_override_font_sizes/font_size = 33
+theme_override_styles/normal = SubResource("StyleBoxFlat_4ob2m")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nqcnj")
+text = "Skip"

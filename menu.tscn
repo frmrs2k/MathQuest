@@ -1,0 +1,186 @@
+[gd_scene format=3 uid="uid://d0fomhfaxfvxd"]
+
+[ext_resource type="Texture2D" uid="uid://crngsha5321eb" path="res://assets/bg/1.png" id="1_wd6lm"]
+[ext_resource type="Texture2D" uid="uid://buhpox5qea353" path="res://assets/sprite_mq/menu/2-removebg-preview.png" id="2_nuiae"]
+[ext_resource type="Texture2D" uid="uid://crcg7cbg8rfe6" path="res://assets/sprite_mq/menu/3-removebg-preview (1).png" id="3_pb5j1"]
+[ext_resource type="Texture2D" uid="uid://efqri58ptuv4" path="res://assets/sprite_mq/menu/4-removebg-preview (2).png" id="4_6fejx"]
+[ext_resource type="Texture2D" uid="uid://b1xesr65mo77f" path="res://assets/sprite_mq/menu/5-removebg-preview (1).png" id="5_akoio"]
+[ext_resource type="Texture2D" uid="uid://bt58t8ac1b6i6" path="res://assets/sprite_mq/menu/8-removebg-preview.png" id="6_ho73k"]
+[ext_resource type="Texture2D" uid="uid://ck0qcikhygwbp" path="res://assets/sprite_mq/menu/6-removebg-preview.png" id="7_dyuxe"]
+[ext_resource type="Texture2D" uid="uid://ytuuc8pw63sq" path="res://assets/sprite_mq/menu/7-removebg-preview.png" id="8_8of67"]
+[ext_resource type="Texture2D" uid="uid://clp7fsv6jesr8" path="res://assets/sprite_mq/menu/10-removebg-preview.png" id="9_pb5j1"]
+[ext_resource type="Texture2D" uid="uid://7gm40ahxwx57" path="res://assets/sprite_mq/menu/Copy_of_Math_quest-removebg-preview.png" id="10_6fejx"]
+
+[sub_resource type="Theme" id="Theme_pn6sb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4ob2m"]
+bg_color = Color(0.12941177, 0.4117647, 0.6745098, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 5
+border_color = Color(0.0076186024, 0.0076186024, 0.0076186024, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[node name="menu" type="Control" unique_id=508301211]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="menu_bg" type="TextureRect" parent="." unique_id=922187257]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_right = 611.0
+offset_bottom = 1056.0
+texture = ExtResource("1_wd6lm")
+expand_mode = 1
+
+[node name="castle" type="Sprite2D" parent="." unique_id=1539932774]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(268, 362)
+texture = ExtResource("2_nuiae")
+
+[node name="blue_flwr2" type="Sprite2D" parent="." unique_id=1020568910]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(32.999817, 485)
+scale = Vector2(0.30533335, 0.26276276)
+texture = ExtResource("8_8of67")
+
+[node name="grass_1" type="Sprite2D" parent="." unique_id=2044421976]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(106.99999, 474.00006)
+scale = Vector2(0.33666664, 0.24549553)
+texture = ExtResource("6_ho73k")
+
+[node name="grass_2" type="Sprite2D" parent="." unique_id=2069358676]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(28.00003, 508.00006)
+scale = Vector2(0.26499993, 0.19557059)
+texture = ExtResource("6_ho73k")
+
+[node name="violet_flwr1" type="Sprite2D" parent="." unique_id=455448305]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(363.5625, 491)
+scale = Vector2(0.5843333, 0.548048)
+texture = ExtResource("7_dyuxe")
+
+[node name="grass_3" type="Sprite2D" parent="." unique_id=12957166]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(73, 510)
+scale = Vector2(0.76633334, 0.8385886)
+texture = ExtResource("6_ho73k")
+
+[node name="blue_flwr" type="Sprite2D" parent="." unique_id=1485301938]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(548, 497)
+scale = Vector2(0.4754167, 0.38231978)
+texture = ExtResource("8_8of67")
+
+[node name="grass_4" type="Sprite2D" parent="." unique_id=992783184]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(134, 610)
+scale = Vector2(0.95066667, 0.9354354)
+texture = ExtResource("6_ho73k")
+
+[node name="grass_9" type="Sprite2D" parent="." unique_id=221949927]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(498.00003, 509.99997)
+scale = Vector2(0.74875, 0.7622936)
+texture = ExtResource("6_ho73k")
+flip_h = true
+
+[node name="grass_5" type="Sprite2D" parent="." unique_id=1356681799]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(60, 655)
+texture = ExtResource("6_ho73k")
+
+[node name="grass_6" type="Sprite2D" parent="." unique_id=1921357225]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(548.00006, 539)
+scale = Vector2(0.8205, 0.6717344)
+texture = ExtResource("6_ho73k")
+
+[node name="grass_7" type="Sprite2D" parent="." unique_id=456219288]
+texture_filter = 1
+position = Vector2(590, 585)
+texture = ExtResource("6_ho73k")
+
+[node name="yellow_flwr" type="Sprite2D" parent="." unique_id=616860195]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(587, 686)
+texture = ExtResource("5_akoio")
+
+[node name="grass_8" type="Sprite2D" parent="." unique_id=1200649963]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(616, 775)
+texture = ExtResource("6_ho73k")
+
+[node name="violet_flwr" type="Sprite2D" parent="." unique_id=1188011423]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(562, 866)
+scale = Vector2(0.96733344, 1.0255256)
+texture = ExtResource("7_dyuxe")
+
+[node name="butterfly" type="Sprite2D" parent="." unique_id=2070823886]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(84, 391)
+scale = Vector2(0.39, 0.3250752)
+texture = ExtResource("4_6fejx")
+
+[node name="title" type="Sprite2D" parent="." unique_id=1865124147]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(311.00003, 288)
+scale = Vector2(1.0873333, 1.0938439)
+texture = ExtResource("3_pb5j1")
+
+[node name="char" type="Sprite2D" parent="." unique_id=1805312164]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(286, 593)
+scale = Vector2(1.0379999, 1.0007507)
+texture = ExtResource("9_pb5j1")
+
+[node name="Button" type="Button" parent="." unique_id=1369134616]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 169.0
+offset_top = 851.0
+offset_right = 434.0
+offset_bottom = 928.0
+theme = SubResource("Theme_pn6sb")
+theme_override_font_sizes/font_size = 39
+theme_override_styles/normal = SubResource("StyleBoxFlat_4ob2m")
+text = "Play"
+
+[node name="settings" type="TextureButton" parent="." unique_id=1223515565]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 16.0
+offset_top = 884.0
+offset_right = 149.0
+offset_bottom = 1080.0
+texture_normal = ExtResource("10_6fejx")
+texture_pressed = ExtResource("10_6fejx")
+ignore_texture_size = true
+stretch_mode = 5
