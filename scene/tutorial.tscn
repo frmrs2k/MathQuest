@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://cx3r47v4ymdug"]
+
+[ext_resource type="Texture2D" uid="uid://e8ik3rii6p8u" path="res://assets/sprite_mq/tut/19.png" id="1_8jxoh"]
+[ext_resource type="Texture2D" uid="uid://q8n67dt0gulv" path="res://assets/sprite_mq/tut/18-removebg-preview.png" id="2_nvmt1"]
+
+[node name="tutorial" type="Node2D" unique_id=556234528]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=321860712]
+
+[node name="Camera2D" type="Camera2D" parent="AnimationPlayer" unique_id=585729547]
+ignore_rotation = false
+enabled = false
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="AnimationPlayer/Camera2D" unique_id=2024576692]
+position = Vector2(381, 585)
+
+[node name="control" type="Control" parent="." unique_id=1662657841]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="bg" type="TextureRect" parent="control" unique_id=322920911]
+layout_mode = 0
+offset_right = 613.0
+offset_bottom = 1060.0
+texture = ExtResource("1_8jxoh")
+expand_mode = 1
+
+[node name="bubble_speech" type="TextureRect" parent="control" unique_id=1565492364]
+layout_mode = 0
+offset_left = -28.0
+offset_top = 218.0
+offset_right = 397.0
+offset_bottom = 872.0
+texture = ExtResource("2_nvmt1")
+expand_mode = 1
+
+[node name="dialogue" type="RichTextLabel" parent="." unique_id=1934277894]
+modulate = Color(0.011764706, 0.011764706, 0.011764706, 1)
+self_modulate = Color(0.011764706, 0.011764706, 0.011764706, 1)
+anchors_preset = -1
+anchor_right = 0.5
+anchor_bottom = 2.354
+offset_left = 75.0
+offset_top = 490.0
+offset_right = 312.0
+offset_bottom = 609.0
+theme_override_font_sizes/normal_font_size = 30
+text = "sup"

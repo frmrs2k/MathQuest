@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://b7gg06ck53p75"]
+
+[ext_resource type="Texture2D" uid="uid://tavqd4lm7ct2" path="res://assets/sprite_mq/tutorial/background.png" id="1_vbqf7"]
+[ext_resource type="Texture2D" uid="uid://c34xusjuv65pu" path="res://assets/sprite_mq/tutorial/board.png" id="2_psgmf"]
+[ext_resource type="Texture2D" uid="uid://7x5xccolppld" path="res://assets/sprite_mq/tutorial/rectangle speech.png" id="3_wokmu"]
+
+[node name="tutorial_3" type="Node2D" unique_id=430486772]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=877621741]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="AnimationPlayer" unique_id=788419572]
+
+[node name="Control" type="Control" parent="." unique_id=702763796]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="bg" type="TextureRect" parent="Control" unique_id=712354338]
+layout_mode = 0
+offset_right = 613.0
+offset_bottom = 1063.0
+texture = ExtResource("1_vbqf7")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="blackboard" type="TextureRect" parent="Control" unique_id=1664643987]
+layout_mode = 0
+offset_left = -2.0
+offset_top = 1.0
+offset_right = 601.0
+offset_bottom = 1044.0
+texture = ExtResource("2_psgmf")
+expand_mode = 1
+
+[node name="bubble_speech" type="TextureRect" parent="Control" unique_id=1381305829]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 675.0
+offset_right = 439.0
+offset_bottom = 1016.0
+texture = ExtResource("3_wokmu")
+expand_mode = 1
+
+[node name="dialogue" type="RichTextLabel" parent="Control/bubble_speech" unique_id=478208039]
+modulate = Color(0.011764706, 0.011764706, 0.011764706, 1)
+self_modulate = Color(0.011764706, 0.011764706, 0.011764706, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.5
+anchor_bottom = 2.354
+offset_left = 26.0
+offset_top = 85.0
+offset_right = 173.5
+offset_bottom = -580.71405
+theme_override_font_sizes/normal_font_size = 30
+text = "sup"

@@ -1,0 +1,120 @@
+[gd_scene format=3 uid="uid://bj66csfwkyoyu"]
+
+[ext_resource type="Texture2D" uid="uid://bg45771psmnmj" path="res://assets/sprite_mq/play game/dragon bg.png" id="1_gnllj"]
+[ext_resource type="FontFile" uid="uid://dcd6bfrdpe423" path="res://assets/font/audex/Audex-Regular.otf" id="2_rongs"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pn6sb"]
+bg_color = Color(11.706, 11.706, 11.706, 0.98)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+expand_margin_left = 79.0
+expand_margin_right = 80.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iaukc"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+expand_margin_left = 79.0
+expand_margin_right = 80.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_quvdj"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+expand_margin_left = 79.0
+expand_margin_right = 80.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4psxk"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+expand_margin_left = 79.0
+expand_margin_right = 80.0
+
+[node name="play" type="Node2D" unique_id=2089618664]
+
+[node name="character" type="AnimatedSprite2D" parent="." unique_id=1759934529]
+position = Vector2(104, 616)
+
+[node name="portal" type="AnimatedSprite2D" parent="." unique_id=608270470]
+position = Vector2(24, 544)
+
+[node name="monster" type="AnimatedSprite2D" parent="." unique_id=993041733]
+position = Vector2(537, 476)
+
+[node name="Control" type="Control" parent="." unique_id=730352523]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="bg" type="TextureRect" parent="Control" unique_id=543965962]
+modulate = Color(0.8242385, 0.8242385, 0.8242385, 1)
+layout_mode = 0
+offset_right = 614.0
+offset_bottom = 1065.0
+texture = ExtResource("1_gnllj")
+expand_mode = 1
+
+[node name="equations" type="Label" parent="Control" unique_id=2034062276]
+layout_mode = 0
+offset_left = 157.0
+offset_top = 311.0
+offset_right = 456.0
+offset_bottom = 389.0
+theme_override_fonts/font = ExtResource("2_rongs")
+theme_override_font_sizes/font_size = 67
+text = "2 + 3 = ?"
+
+[node name="GridContainer" type="GridContainer" parent="Control" unique_id=1635170319]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 123.0
+offset_top = 774.0
+offset_right = 449.0
+offset_bottom = 993.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 200
+theme_override_constants/v_separation = 67
+columns = 2
+
+[node name="Button" type="Button" parent="Control/GridContainer" unique_id=599947398]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.0093103545, 0.0093103545, 0.0093103545, 1)
+theme_override_font_sizes/font_size = 55
+theme_override_styles/normal = SubResource("StyleBoxFlat_pn6sb")
+text = "4"
+
+[node name="Button2" type="Button" parent="Control/GridContainer" unique_id=1984826756]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.007843138, 0.007843138, 0.007843138, 1)
+theme_override_font_sizes/font_size = 55
+theme_override_styles/normal = SubResource("StyleBoxFlat_iaukc")
+text = "56"
+
+[node name="Button3" type="Button" parent="Control/GridContainer" unique_id=1005495229]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.0093103545, 0.0093103545, 0.0093103545, 1)
+theme_override_font_sizes/font_size = 55
+theme_override_styles/normal = SubResource("StyleBoxFlat_quvdj")
+text = "48"
+
+[node name="Button4" type="Button" parent="Control/GridContainer" unique_id=1547568159]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.0093103545, 0.0093103545, 0.0093103545, 1)
+theme_override_font_sizes/font_size = 55
+theme_override_styles/normal = SubResource("StyleBoxFlat_4psxk")
+text = "5"

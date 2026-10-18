@@ -1,0 +1,180 @@
+[gd_scene format=3 uid="uid://devyawtbdqk0q"]
+
+[ext_resource type="Texture2D" uid="uid://bwo6142lvoqt0" path="res://assets/bg/start level.png" id="1_dv4yv"]
+[ext_resource type="Texture2D" uid="uid://j0natdrsjya0" path="res://assets/sprite_mq/start level/scroll.png" id="2_dv4yv"]
+[ext_resource type="FontFile" path="res://assets/labels/para/ParaRegular.ttf" id="3_732sy"]
+[ext_resource type="Texture2D" path="res://assets/sprite_mq/level/level d1/20-removebg-preview.png" id="4_kkcqe"]
+[ext_resource type="Texture2D" uid="uid://bamcbt8pua32e" path="res://assets/sprite_mq/start level/hollow star.png" id="5_grxd2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pn6sb"]
+bg_color = Color(0.12941177, 0.4117647, 0.6745098, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 5
+border_color = Color(0.007843138, 0.007843138, 0.007843138, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_732sy"]
+bg_color = Color(0.12941177, 0.4117647, 0.6745098, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 7
+border_color = Color(0.007843138, 0.007843138, 0.007843138, 1)
+border_blend = true
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kkcqe"]
+bg_color = Color(0.31517485, 0.61374515, 0.914433, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 7
+border_color = Color(0.007843138, 0.007843138, 0.007843138, 1)
+border_blend = true
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4ob2m"]
+bg_color = Color(1, 0.19215687, 0.19215687, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 5
+border_color = Color(0.0076186024, 0.0076186024, 0.0076186024, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dv4yv"]
+bg_color = Color(1, 0.19215687, 0.19215687, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 7
+border_color = Color(0.007843138, 0.007843138, 0.007843138, 1)
+border_blend = true
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_grxd2"]
+bg_color = Color(1, 0.4341195, 0.3883994, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 7
+border_color = Color(0.0076186024, 0.0076186024, 0.0076186024, 1)
+border_blend = true
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="Theme" id="Theme_5oy4b"]
+
+[node name="level_start" type="Node2D" unique_id=1208336177]
+
+[node name="Control" type="Control" parent="." unique_id=56444529]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="bg" type="TextureRect" parent="Control" unique_id=1303751921]
+modulate = Color(0, 1, 1, 1)
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = -1.0
+offset_top = -1.0
+offset_right = 611.0
+offset_bottom = 1060.0
+texture = ExtResource("1_dv4yv")
+expand_mode = 1
+
+[node name="paper_scroll" type="TextureRect" parent="Control" unique_id=1852189557]
+layout_mode = 0
+offset_left = -25.0
+offset_top = 31.0
+offset_right = 626.0
+offset_bottom = 1133.0
+texture = ExtResource("2_dv4yv")
+
+[node name="play" type="Button" parent="Control" unique_id=1017555771]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 196.0
+offset_top = 662.0
+offset_right = 415.0
+offset_bottom = 727.0
+theme_override_colors/font_hover_pressed_color = Color(0.9079791, 0.9079791, 0.9079791, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_pn6sb")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_732sy")
+theme_override_styles/hover = SubResource("StyleBoxFlat_kkcqe")
+text = "Play"
+
+[node name="back" type="Button" parent="Control" unique_id=1001149887]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 205.0
+offset_top = 750.0
+offset_right = 407.0
+offset_bottom = 811.0
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_4ob2m")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_dv4yv")
+theme_override_styles/hover = SubResource("StyleBoxFlat_grxd2")
+text = "Back"
+
+[node name="Level_number" type="Label" parent="Control" unique_id=239761789]
+modulate = Color(0.69411767, 0.27058825, 0, 1)
+self_modulate = Color(0.69411767, 0.27058825, 0, 1)
+light_mask = 0
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 224.0
+offset_top = 255.0
+offset_right = 396.0
+offset_bottom = 305.0
+theme = SubResource("Theme_5oy4b")
+theme_override_colors/font_color = Color(0.69411767, 0.27058825, 0, 0.8039216)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
+theme_override_fonts/font = ExtResource("3_732sy")
+theme_override_font_sizes/font_size = 46
+text = "Level 1"
+
+[node name="home" type="TextureButton" parent="Control" unique_id=1362964243]
+layout_mode = 0
+offset_left = 432.0
+offset_top = -7.0
+offset_right = 638.0
+offset_bottom = 227.0
+texture_normal = ExtResource("4_kkcqe")
+texture_pressed = ExtResource("4_kkcqe")
+texture_hover = ExtResource("4_kkcqe")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="stars" type="TextureRect" parent="Control" unique_id=219264279]
+layout_mode = 0
+offset_left = 130.0
+offset_top = 318.0
+offset_right = 458.0
+offset_bottom = 576.0
+texture = ExtResource("5_grxd2")

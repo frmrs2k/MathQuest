@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://svv3a1rly66u"]
+
+[ext_resource type="Texture2D" uid="uid://dskkqslonq7pg" path="res://assets/sprite_mq/tutorial/backgroun orange castle.png" id="1_pno75"]
+[ext_resource type="Texture2D" uid="uid://dm1jftj2sh8ww" path="res://assets/sprite_mq/tutorial/bubble speech.png" id="2_cfsmh"]
+
+[node name="portal" type="Node2D" unique_id=1109552410]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1578555243]
+
+[node name="portal" type="AnimatedSprite2D" parent="." unique_id=920406062]
+
+[node name="Control" type="Control" parent="." unique_id=2025193920]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="bg" type="TextureRect" parent="Control" unique_id=1015323881]
+layout_mode = 0
+offset_right = 609.0
+offset_bottom = 1059.0
+texture = ExtResource("1_pno75")
+expand_mode = 1
+
+[node name="bubble_speech" type="TextureRect" parent="Control" unique_id=1259993916]
+layout_mode = 0
+offset_left = -4.0
+offset_top = 88.0
+offset_right = 423.0
+offset_bottom = 857.0
+texture = ExtResource("2_cfsmh")
+metadata/_edit_use_anchors_ = true
+
+[node name="dialogue" type="RichTextLabel" parent="Control/bubble_speech" unique_id=550506510]
+modulate = Color(0.011764706, 0.011764706, 0.011764706, 1)
+self_modulate = Color(0.011764706, 0.011764706, 0.011764706, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.5
+anchor_bottom = 2.354
+offset_left = 99.0
+offset_top = 317.0
+offset_right = 128.5
+offset_bottom = -1350.2261
+theme_override_font_sizes/normal_font_size = 30
+text = "sup"

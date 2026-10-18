@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://cryh2ykf760hj"]
+
+[ext_resource type="Texture2D" uid="uid://tavqd4lm7ct2" path="res://assets/sprite_mq/tutorial/background.png" id="1_7kb77"]
+[ext_resource type="Texture2D" uid="uid://dm1jftj2sh8ww" path="res://assets/sprite_mq/tutorial/bubble speech.png" id="2_7kb77"]
+
+[node name="tutorial2" type="Node2D" unique_id=1694151218]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1439688165]
+
+[node name="candle" type="AnimatedSprite2D" parent="." unique_id=473246231]
+
+[node name="avatar" type="AnimatedSprite2D" parent="." unique_id=2112420131]
+
+[node name="Control" type="Control" parent="." unique_id=574219616]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
+
+[node name="bg" type="TextureRect" parent="Control" unique_id=1802737246]
+layout_mode = 0
+offset_right = 613.0
+offset_bottom = 1063.0
+texture = ExtResource("1_7kb77")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="bubble_speech" type="TextureRect" parent="Control" unique_id=682214391]
+layout_mode = 0
+offset_left = -4.0
+offset_top = 88.0
+offset_right = 423.0
+offset_bottom = 857.0
+texture = ExtResource("2_7kb77")
+metadata/_edit_use_anchors_ = true
+
+[node name="dialogue" type="RichTextLabel" parent="Control" unique_id=1413002017]
+modulate = Color(0.011764706, 0.011764706, 0.011764706, 1)
+self_modulate = Color(0.011764706, 0.011764706, 0.011764706, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.5
+anchor_bottom = 2.354
+offset_left = 93.0
+offset_top = 416.0
+offset_right = 330.0
+offset_bottom = 456.84
+theme_override_font_sizes/normal_font_size = 30
+text = "sup"

@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cvwu3bck1asgc"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=66020049]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=825752116]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=224869540]

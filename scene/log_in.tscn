@@ -1,0 +1,298 @@
+[gd_scene format=3 uid="uid://ua7brcsewd18"]
+
+[ext_resource type="Texture2D" uid="uid://boj65nm2g1t37" path="res://assets/bg/login.png" id="1_7eonm"]
+[ext_resource type="Texture2D" uid="uid://cmdrdmbd5nvwk" path="res://assets/sprite_mq/login/rock1.png" id="2_7eonm"]
+[ext_resource type="Texture2D" uid="uid://caytiesmgy3ns" path="res://assets/sprite_mq/login/grass.png" id="2_dj3ng"]
+[ext_resource type="Texture2D" uid="uid://bt4k1s0tjs6yr" path="res://assets/sprite_mq/login/violet flwr.png" id="2_klevb"]
+[ext_resource type="FontFile" uid="uid://c1jwd83tv5qo3" path="res://assets/font/para(font)/ParaRegular.ttf" id="3_dj3ng"]
+[ext_resource type="Texture2D" uid="uid://wk6g16uybjk0" path="res://assets/sprite_mq/login/rock.png" id="3_eyjwq"]
+[ext_resource type="Texture2D" uid="uid://b7o6ei1xwdpr1" path="res://assets/sprite_mq/menu/butterfly.png" id="6_tib3l"]
+
+[sub_resource type="Theme" id="Theme_pn6sb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4psxk"]
+bg_color = Color(1, 0.8980392, 0.7921569, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.003921569, 0, 0, 1)
+border_blend = true
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+expand_margin_left = 9.0
+
+[sub_resource type="Theme" id="Theme_13q73"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rk0xb"]
+bg_color = Color(1, 0.8980392, 0.7921569, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.0076186024, 0.0076186024, 0.0076186024, 1)
+border_blend = true
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+corner_detail = 15
+expand_margin_left = 2.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7eonm"]
+bg_color = Color(1, 0.8980392, 0.7921569, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.007843138, 0.007843138, 0.007843138, 1)
+border_blend = true
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dj3ng"]
+bg_color = Color(0.98402125, 0.913724, 0.7148026, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.007843138, 0.007843138, 0.007843138, 1)
+border_blend = true
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o2qqr"]
+bg_color = Color(1, 0.8980392, 0.7921569, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.0076186024, 0.0076186024, 0.0076186024, 1)
+border_blend = true
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+expand_margin_left = 8.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_je8uc"]
+bg_color = Color(0.12941177, 0.4117647, 0.6745098, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 5
+border_color = Color(0.0076186024, 0.0076186024, 0.0076186024, 1)
+border_blend = true
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ow15g"]
+bg_color = Color(0.2522084, 0.5667426, 0.87547123, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 5
+border_color = Color(0.0076186024, 0.0076186024, 0.0076186024, 1)
+border_blend = true
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oqxhe"]
+bg_color = Color(0.1751338, 0.48473895, 0.7781726, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 5
+border_color = Color(0.0076186024, 0.0076186024, 0.0076186024, 1)
+border_blend = true
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_13q73"]
+bg_color = Color(0.31911343, 0.6174703, 0.91602856, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="log_in" type="Control" unique_id=1055865423]
+custom_minimum_size = Vector2(610, 1060)
+layout_mode = 3
+anchors_preset = 0
+
+[node name="bg_login" type="TextureRect" parent="." unique_id=522455144]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_7eonm")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="flower_login" type="Sprite2D" parent="." unique_id=1487269887]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(567, 1042.0001)
+rotation = 0.08396561
+scale = Vector2(1.1344907, 1.1050346)
+texture = ExtResource("2_klevb")
+
+[node name="rock1_login" type="Sprite2D" parent="." unique_id=1658546053]
+top_level = true
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(559, 1090)
+scale = Vector2(1.5659999, 1.5578078)
+texture = ExtResource("2_7eonm")
+
+[node name="grass_login" type="Sprite2D" parent="." unique_id=1383882456]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(202.00002, 1131)
+scale = Vector2(1.8323332, 1.6959459)
+texture = ExtResource("2_dj3ng")
+
+[node name="rock2_login" type="Sprite2D" parent="." unique_id=728056598]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(46.00001, 1060)
+scale = Vector2(1.8500416, 1.5214903)
+texture = ExtResource("3_eyjwq")
+
+[node name="grass2_login" type="Sprite2D" parent="." unique_id=1148734192]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(228.00003, 1097)
+scale = Vector2(0.86970836, 0.7167793)
+texture = ExtResource("2_dj3ng")
+
+[node name="grass3_login" type="Sprite2D" parent="." unique_id=348852262]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(129, 1132)
+scale = Vector2(1.0056665, 0.7387387)
+texture = ExtResource("2_dj3ng")
+
+[node name="butterfly" type="TextureRect" parent="." unique_id=1777968657]
+layout_mode = 0
+offset_left = -31.0
+offset_top = 193.0
+offset_right = 198.0
+offset_bottom = 488.0
+texture = ExtResource("6_tib3l")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=477929510]
+
+[node name="Root" type="Control" parent="CanvasLayer" unique_id=2020653952]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -151.0
+offset_top = -144.0
+offset_right = 185.0
+offset_bottom = 367.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="name_input" type="LineEdit" parent="CanvasLayer/Root" unique_id=1547616069]
+visible = false
+layout_mode = 0
+offset_left = 22.0
+offset_top = 75.0
+offset_right = 1171.0
+offset_bottom = 2003.0
+
+[node name="grade_input" type="LineEdit" parent="CanvasLayer/Root" unique_id=1469505197]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 102.0
+offset_right = 303.0
+offset_bottom = 155.0
+theme = SubResource("Theme_pn6sb")
+theme_override_colors/font_color = Color(0.003921569, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_dj3ng")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_4psxk")
+
+[node name="grade_dropdown" type="OptionButton" parent="CanvasLayer/Root" unique_id=118465121]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 221.0
+offset_right = 299.0
+offset_bottom = 273.0
+theme = SubResource("Theme_13q73")
+theme_override_colors/font_color = Color(0.003921569, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.003921569, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.003921569, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+theme_override_colors/icon_focus_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+theme_override_colors/icon_pressed_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+theme_override_colors/icon_hover_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+theme_override_constants/outline_size = 0
+theme_override_constants/h_separation = 0
+theme_override_constants/icon_max_width = 0
+theme_override_constants/align_to_largest_stylebox = 1
+theme_override_fonts/font = ExtResource("3_dj3ng")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_rk0xb")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7eonm")
+theme_override_styles/hover = SubResource("StyleBoxFlat_dj3ng")
+theme_override_constants/arrow_margin = 17
+theme_override_constants/modulate_arrow = 3
+button_pressed = true
+allow_reselect = true
+item_count = 2
+popup/item_0/text = "Grade 3"
+popup/item_0/id = 0
+popup/item_1/text = "Grade 4"
+popup/item_1/id = 1
+
+[node name="pass_input" type="LineEdit" parent="CanvasLayer/Root" unique_id=1676111776]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 340.0
+offset_right = 297.0
+offset_bottom = 390.0
+theme_override_colors/font_color = Color(0.0093103545, 0.0093103545, 0.0093103545, 1)
+theme_override_fonts/font = ExtResource("3_dj3ng")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_o2qqr")
+
+[node name="enter_bttn" type="Button" parent="CanvasLayer/Root" unique_id=1968317410]
+texture_filter = 1
+layout_mode = 0
+offset_left = 90.0
+offset_top = 440.0
+offset_right = 232.0
+offset_bottom = 481.0
+theme_override_colors/font_hover_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.2202931, 0.53691274, 0.8432951, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_je8uc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ow15g")
+theme_override_styles/hover = SubResource("StyleBoxFlat_oqxhe")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_13q73")
+text = "Enter"

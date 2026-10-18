@@ -1,0 +1,148 @@
+[gd_scene format=3 uid="uid://dlag1cgalb5o"]
+
+[ext_resource type="Texture2D" uid="uid://bp7wvky25y46b" path="res://assets/sprite_mq/scoreboard/background.png" id="1_lboqe"]
+[ext_resource type="Texture2D" uid="uid://dumbfxixmhhhw" path="res://assets/sprite_mq/scoreboard/check icon.png" id="2_glxyt"]
+[ext_resource type="Texture2D" uid="uid://cdnv6v0x8grm7" path="res://assets/sprite_mq/scoreboard/total star icon.png" id="3_yr0es"]
+[ext_resource type="Texture2D" uid="uid://c31hpk6s3kjsi" path="res://assets/sprite_mq/scoreboard/profile frame.png" id="4_j8j1c"]
+[ext_resource type="Texture2D" path="res://assets/sprite_mq/characters/Copy_of_Copy_of_Math_quest__4_-removebg-preview.png" id="5_pkxj4"]
+[ext_resource type="Texture2D" path="res://assets/sprite_mq/level/level d1/20-removebg-preview.png" id="6_c64qb"]
+
+[node name="score_board" type="Node2D" unique_id=1281272404]
+
+[node name="Control" type="Control" parent="." unique_id=143303895]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="bg" type="TextureRect" parent="Control" unique_id=423345039]
+layout_mode = 0
+offset_right = 611.0
+offset_bottom = 1066.0
+texture = ExtResource("1_lboqe")
+expand_mode = 1
+
+[node name="name" type="RichTextLabel" parent="Control" unique_id=191657844]
+layout_mode = 0
+offset_left = 168.0
+offset_top = 178.0
+offset_right = 432.0
+offset_bottom = 213.0
+theme_override_colors/default_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+theme_override_font_sizes/normal_font_size = 25
+theme_override_font_sizes/bold_font_size = 18
+text = "Juna D. Dela Cruz"
+
+[node name="grade" type="RichTextLabel" parent="Control" unique_id=650532394]
+layout_mode = 0
+offset_left = 168.0
+offset_top = 215.0
+offset_right = 403.0
+offset_bottom = 246.0
+theme_override_colors/default_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+theme_override_font_sizes/normal_font_size = 21
+text = "Grade: 3"
+
+[node name="overall_score" type="RichTextLabel" parent="Control" unique_id=897650342]
+layout_mode = 0
+offset_left = 462.0
+offset_top = 190.0
+offset_right = 555.0
+offset_bottom = 293.0
+theme_override_colors/default_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+theme_override_font_sizes/normal_font_size = 65
+theme_override_font_sizes/bold_font_size = 31
+text = "66"
+
+[node name="Total_stars" type="RichTextLabel" parent="Control" unique_id=1105508207]
+layout_mode = 0
+offset_left = 166.0
+offset_top = 891.0
+offset_right = 258.0
+offset_bottom = 987.0
+theme_override_colors/default_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+theme_override_font_sizes/normal_font_size = 65
+text = "99"
+
+[node name="Levels_complete" type="RichTextLabel" parent="Control" unique_id=1321114656]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="level_progress" type="RichTextLabel" parent="Control" unique_id=1773255189]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 299.0
+offset_right = 112.0
+offset_bottom = 400.0
+
+[node name="check_icon" type="TextureRect" parent="Control" unique_id=186499016]
+layout_mode = 0
+offset_left = 453.0
+offset_top = 911.0
+offset_right = 538.0
+offset_bottom = 973.0
+rotation = -0.002123884
+texture = ExtResource("2_glxyt")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="total star icon" type="TextureRect" parent="Control" unique_id=173964921]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 856.0
+offset_right = 173.0
+offset_bottom = 1002.0
+texture = ExtResource("3_yr0es")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="profile frame" type="TextureRect" parent="Control" unique_id=557330737 node_paths=PackedStringArray("shortcut_context")]
+texture_filter = 1
+layout_mode = 0
+offset_left = 9.0
+offset_top = 149.99998
+offset_right = 178.60674
+offset_bottom = 309.74066
+rotation = -0.005969614
+pivot_offset = Vector2(75.08868, 50.691086)
+shortcut_context = NodePath("")
+texture = ExtResource("4_j8j1c")
+expand_mode = 1
+
+[node name="profile pic" type="TextureRect" parent="Control" unique_id=397205600]
+layout_mode = 0
+offset_left = 51.0
+offset_top = 188.0
+offset_right = 136.0
+offset_bottom = 284.0
+
+[node name="back" type="TextureButton" parent="Control" unique_id=1721433637]
+layout_mode = 0
+offset_left = -85.0
+offset_top = -26.0
+offset_right = 199.0
+offset_bottom = 170.0
+texture_normal = ExtResource("5_pkxj4")
+texture_pressed = ExtResource("5_pkxj4")
+texture_hover = ExtResource("5_pkxj4")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="home" type="TextureButton" parent="Control" unique_id=647436755]
+layout_mode = 0
+offset_left = 442.00003
+offset_top = -43.000004
+offset_right = 724.50476
+offset_bottom = 285.56
+scale = Vector2(0.69733334, 0.6756757)
+texture_normal = ExtResource("6_c64qb")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control" unique_id=1432047337]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 477.0
+offset_right = 557.0
+offset_bottom = 772.0

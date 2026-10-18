@@ -1,0 +1,190 @@
+[gd_scene format=3 uid="uid://b1mhmsl8gknx4"]
+
+[ext_resource type="Texture2D" uid="uid://c03y3icosuhmw" path="res://assets/sprite_mq/level/level d1/bg dragon.png" id="1_efwaf"]
+[ext_resource type="Texture2D" uid="uid://bu1r3kkmky4wh" path="res://assets/sprite_mq/level/level d1/levels sign.png" id="2_rexob"]
+[ext_resource type="Texture2D" path="res://assets/sprite_mq/level/level d1/20-removebg-preview.png" id="3_38nxx"]
+[ext_resource type="Texture2D" uid="uid://ct0xqdlsqhbx6" path="res://assets/sprite_mq/level/level d1/solid star.png" id="4_38nxx"]
+[ext_resource type="Texture2D" uid="uid://ch4rcxoqj8ipw" path="res://assets/buttons/home.png" id="4_ax5iy"]
+[ext_resource type="Texture2D" path="res://assets/sprite_mq/characters/10-removebg-preview.png" id="5_qv0nl"]
+[ext_resource type="Texture2D" path="res://assets/sprite_mq/menu/Copy_of_Math_quest-removebg-preview.png" id="6_41yha"]
+[ext_resource type="Texture2D" uid="uid://bnuaxn2m7oph0" path="res://assets/buttons/settings.png" id="6_qv0nl"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_41yha"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_pn6sb"]
+
+[sub_resource type="Theme" id="Theme_pn6sb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4ob2m"]
+bg_color = Color(0.8, 0, 1, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nqcnj"]
+bg_color = Color(0.7536607, 0.47881126, 0.80467963, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+corner_detail = 20
+
+[node name="Level_design1" type="Control" unique_id=309309632]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=236712844]
+layout_mode = 0
+offset_right = 608.0
+offset_bottom = 1059.0
+texture = ExtResource("1_efwaf")
+expand_mode = 1
+
+[node name="level_sign" type="Sprite2D" parent="." unique_id=856704219]
+position = Vector2(287, 111)
+texture = ExtResource("2_rexob")
+
+[node name="home" type="TextureButton" parent="." unique_id=83351923]
+layout_mode = 0
+offset_left = 196.0
+offset_top = 886.00006
+offset_right = 478.50476
+offset_bottom = 1214.56
+scale = Vector2(0.69733334, 0.6756757)
+texture_normal = ExtResource("3_38nxx")
+texture_pressed = ExtResource("4_ax5iy")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="settings2" type="TextureButton" parent="." unique_id=1586374859]
+layout_mode = 0
+offset_left = 0.9999999
+offset_top = 916.99994
+offset_right = 252.3404
+offset_bottom = 1223.9705
+scale = Vector2(0.49733335, 0.5570571)
+button_group = SubResource("ButtonGroup_41yha")
+texture_normal = ExtResource("6_41yha")
+texture_pressed = ExtResource("6_qv0nl")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="star1" type="Sprite2D" parent="." unique_id=1814778897]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(115, 224.00002)
+scale = Vector2(0.10599996, 0.10285283)
+texture = ExtResource("4_38nxx")
+
+[node name="star2" type="Sprite2D" parent="." unique_id=1377454537]
+position = Vector2(274.00003, 290)
+scale = Vector2(0.107333235, 0.09459463)
+texture = ExtResource("4_38nxx")
+
+[node name="star3" type="Sprite2D" parent="." unique_id=1830070983]
+position = Vector2(390, 381.00003)
+scale = Vector2(0.07733338, 0.0698198)
+texture = ExtResource("4_38nxx")
+
+[node name="choose_char" type="Sprite2D" parent="." unique_id=62732137]
+position = Vector2(505, 928)
+scale = Vector2(0.5823334, 0.4932432)
+texture = ExtResource("5_qv0nl")
+
+[node name="settings" type="TextureButton" parent="." unique_id=870886936]
+layout_mode = 0
+offset_left = 0.9999999
+offset_top = 916.99994
+offset_right = 252.3404
+offset_bottom = 1223.9705
+scale = Vector2(0.49733335, 0.5570571)
+button_group = SubResource("ButtonGroup_pn6sb")
+texture_normal = ExtResource("6_41yha")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Button" type="Button" parent="." unique_id=331343998]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 105.0
+offset_top = 261.0
+offset_right = 211.0
+offset_bottom = 364.0
+theme = SubResource("Theme_pn6sb")
+theme_override_font_sizes/font_size = 56
+theme_override_styles/normal = SubResource("StyleBoxFlat_4ob2m")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nqcnj")
+text = "0"
+
+[node name="Button2" type="Button" parent="." unique_id=1494552769]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 362.0
+offset_top = 261.0
+offset_right = 468.0
+offset_bottom = 364.0
+theme = SubResource("Theme_pn6sb")
+theme_override_font_sizes/font_size = 56
+theme_override_styles/normal = SubResource("StyleBoxFlat_4ob2m")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nqcnj")
+text = "1"
+
+[node name="Button3" type="Button" parent="." unique_id=257265161]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 102.0
+offset_top = 474.0
+offset_right = 208.0
+offset_bottom = 577.0
+theme = SubResource("Theme_pn6sb")
+theme_override_font_sizes/font_size = 56
+theme_override_styles/normal = SubResource("StyleBoxFlat_4ob2m")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nqcnj")
+text = "2"
+
+[node name="Button6" type="Button" parent="." unique_id=704212161]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 105.0
+offset_top = 692.0
+offset_right = 211.0
+offset_bottom = 795.0
+theme = SubResource("Theme_pn6sb")
+theme_override_font_sizes/font_size = 56
+theme_override_styles/normal = SubResource("StyleBoxFlat_4ob2m")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nqcnj")
+text = "4"
+
+[node name="Button5" type="Button" parent="." unique_id=933090384]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 366.0
+offset_top = 691.0
+offset_right = 472.0
+offset_bottom = 794.0
+theme = SubResource("Theme_pn6sb")
+theme_override_font_sizes/font_size = 56
+theme_override_styles/normal = SubResource("StyleBoxFlat_4ob2m")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nqcnj")
+text = "5"
+
+[node name="Button4" type="Button" parent="." unique_id=245070163]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 0
+offset_left = 363.0
+offset_top = 473.0
+offset_right = 469.0
+offset_bottom = 576.0
+theme = SubResource("Theme_pn6sb")
+theme_override_font_sizes/font_size = 56
+theme_override_styles/normal = SubResource("StyleBoxFlat_4ob2m")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nqcnj")
+text = "3"
